@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { cn } from "../../../lib/utils";
 import { Link } from "react-router-dom";
-
+import StartTestButton from "../ui/StartTestButton";
 
 interface HeaderProps {
   userID: string;
@@ -306,14 +306,14 @@ const HomePage: React.FC<HeaderProps> = ({ userID }) => {
                         interview.
                       </p>
                       <button
-                        className="w-full bg-indigo-600/80 hover:bg-indigo-600 text-white font-medium py-2 rounded-lg transition-all duration-300 backdrop-blur-md hover:shadow-indigo-500/40 shadow-md"
+                       
                         onClick={() => {
                           setTitle(company);
                           setDifficulty("Medium");
                           setConfirmation(true);
                         }}
                       >
-                        Start Test
+                         <StartTestButton />
                       </button>
                     </div>
                   ))}
@@ -361,14 +361,14 @@ const HomePage: React.FC<HeaderProps> = ({ userID }) => {
                         interview.
                       </p>
                       <button
-                        className="w-full bg-indigo-600/80 hover:bg-indigo-600 text-white font-medium py-2 rounded-lg transition-all duration-300 backdrop-blur-md hover:shadow-indigo-500/40 shadow-md"
+                      
                         onClick={() => {
                           setTitle(company);
                           setDifficulty("Medium");
                           setConfirmation(true);
                         }}
                       >
-                        Start Test
+                        <StartTestButton/>
                       </button>
                     </div>
                   ))}
@@ -417,14 +417,14 @@ const HomePage: React.FC<HeaderProps> = ({ userID }) => {
                         interview.
                       </p>
                       <button
-                        className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded-md transition-all hover:shadow-md hover:shadow-indigo-500/40"
+                        
                         onClick={() => {
                           setTitle(company);
                           setDifficulty("Medium");
                           setConfirmation(true);
                         }}
                       >
-                        Start Test
+                        <StartTestButton/>
                       </button>
                     </div>
                   ))}
